@@ -1,53 +1,76 @@
 import { useState, useEffect } from "react";
-import { Switch, Route } from "react-router-dom";
+//import { Route } from "react-router-dom";
 
-import Header from './components/Header';
-import Home from './components/Home';
-import RestaurantPage from './components/RestaurantPage';
-import RestaurantForm from './components/RestaurantForm';
-import Details from "./components/Details";
-import RestoOfTheWeek from './components/RestoOfTheWeek';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
 
-  const [restaurants, setRestaurants] = useState([])
+  const [shows, setShows] = useState([])
 
   useEffect(() => {
-    fetch ("http://localhost:3000/restaurants")
+    fetch ("http://localhost:3000/Shows")
     .then (res => res.json())
-    .then (restaurants => setRestaurants(restaurants))
+    .then (shows => setShows(shows))
   }, [])
 
-  function onAddRestaurant(newRestaurant){
-    return setRestaurants([...restaurants, newRestaurant]);
+  function onAddWatch(newWatch){
+    return setShows([...shows, newWatch]);
   };
 
-  return (
-    <div className="container">
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route>
-          <Header />
-          <Switch>
-            <Route exact path="/restaurants">
-              <RestaurantPage restaurants={restaurants}/>
+  function App() {
+    return (
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/users">Users</Link>
+              </li>
+            </ul>
+          </nav>
+  
+          {/* A <Switch> looks through its children <Route>s and
+              renders the first one that matches the current URL. */}
+          <Routes>
+            <Route path="/about">
+              <About />
             </Route>
-            <Route exact path="/restaurants/new">
-              <RestaurantForm onAddRestaurant={onAddRestaurant}/>
+            <Route path="/users">
+              <Users />
             </Route>
-            <Route path="/restaurants/:id">
-              <Details />
+            <Route path="/">
+              <Home />
             </Route>
-            <Route path="/weeksresto">
-              <RestoOfTheWeek restaurants={restaurants}/>
-            </Route>
-            </Switch>
-        </Route>
-      </Switch>
-    </div>
-  );
+          </Routes>
+        </div>
+      </Router>
+    );
+  }
+  
+  function Home() {
+    return <h2>Home</h2>;
+  }
+  
+  function About() {
+    return <h2>About</h2>;
+  }
+  
+  function Users() {
+    return <h2>Users</h2>;
+  }
+  
 }
 
 export default App;
