@@ -2,15 +2,15 @@ import { useState, useEffect } from "react";
 import ShowsContainer from "./ShowsContainer"
 import Search from "./Search";
 import Header from "./Header"
-import RandomButton from "./RandomButton"
 import MovieForm from "./MovieForm"
 import MovieOfTheWeek from "./MovieOfTheWeek"
 import React from "react";
 
 
 function App() {
-  const [searchText, setSearchText] = useState("");
   const [shows, setShows] = useState([])
+  const [searchText, setSearchText] = useState("");
+
 
   useEffect(() => {
     fetch ("http://localhost:3000/Shows")
@@ -28,12 +28,12 @@ function App() {
 
   return (
     <div className="container">
-      <Header />
+      {/* <Header /> */}
       <Search onChange={handleChange}/>
-      <RandomButton />
+      {/* <RandomButton /> */}
       <ShowsContainer shows={shows} searchText={searchText}/>
-      <MovieForm />
-      <MovieOfTheWeek />
+      {/* <MovieForm />
+      <MovieOfTheWeek /> */}
     </div>
   );
 }

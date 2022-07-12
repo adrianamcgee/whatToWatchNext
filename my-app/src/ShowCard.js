@@ -13,7 +13,7 @@ function ShowCard({show}) {
           <div className="card__title">{show.title}</div>
           <p className="card__text">{show.summary}</p>
           <div className="card__detail">
-            <p>{show.runtime}</p>
+            <p>{show.genre}</p>
             <p>
               {
                 //planeteer.fromUSA ? "USA-based" : "Working overseas"
