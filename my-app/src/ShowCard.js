@@ -15,10 +15,11 @@ function ShowCard({show}) {
           <div className="card__detail">
             <p>{show.genre}</p>
             <p>
-              {
-                //planeteer.fromUSA ? "USA-based" : "Working overseas"
-              }
+              {show.runtime}
             </p>
+            <p>{show.releaseYear}</p>
+            <iframe height="480" width="500" src={show.trailer}>
+            </iframe>
           </div>
         </div>
       </div>
