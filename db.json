@@ -1,0 +1,303 @@
+{
+    "Shows": [
+      {
+        "id": 1,
+        "title": "Saving Private Ryan",
+        "poster": "https://www.imdb.com/title/tt0120815/",
+        "release year": "1998",
+        "summary": "Captain John Miller (Tom Hanks) takes his men behind enemy lines to find Private James Ryan, whose three brothers have been killed in combat. Surrounded by the brutal realties of war, while searching for Ryan, each man embarks upon a personal journey and discovers their own strength to triumph over an uncertain future with honor, decency and courage.",
+        "genre": "War, Action, Drama",
+        "runtime": "2h 49m",
+        "trailer": "https://www.youtube.com/watch?v=zwhP5b4tD6g"
+      },
+      {
+        "id": 2,
+        "title": "The Wolf Of Wall Street",
+        "poster": "https://m.media-amazon.com/images/I/51MAuTMt+gL._AC_.jpg",
+        "release year": "2013",
+        "summary": "In 1987, Jordan Belfort (Leonardo DiCaprio) takes an entry-level job at a Wall Street brokerage firm. By the early 1990s, while still in his 20s, Belfort founds his own firm, Stratton Oakmont. Together with his trusted lieutenant (Jonah Hill) and a merry band of brokers, Belfort makes a huge fortune by defrauding wealthy investors out of millions. However, while Belfort and his cronies partake in a hedonistic brew of sex, drugs and thrills, the SEC and the FBI close in on his empire of excess.",
+        "genre": "Drama, Comedy, Crime Fiction",
+        "runtime": "3h ",
+        "trailer": "https://www.youtube.com/watch?v=iszwuX1AK6A&ab_channel=ParamountPictures"
+      },
+      {
+        "id": 3,
+        "title": "Caddy Shack",
+        "poster": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.ebayimg.com%2Fimages%2Fg%2FF38AAOSwkgNfCkZj%2Fs-l500.jpg&imgrefurl=https%3A%2F%2Fwww.ebay.com%2Fitm%2F353136859808&tbnid=eYQZllVAAYs12M&vet=12ahUKEwjR5P2zqPH4AhV_CJ0JHUK8DKwQMygCegUIARCyAg..i&docid=u7hj2_BwZVRMRM&w=375&h=500&q=caddyshack%20poster&ved=2ahUKEwjR5P2zqPH4AhV_CJ0JHUK8DKwQMygCegUIARCyAg",
+        "release year": "1980",
+        "summary": "Danny Noonan (Michael O'Keefe), a teen down on his luck, works as a caddy at the snob-infested Bushwood Country Club to raise money for his college education. In an attempt to gain votes for a college scholarship reserved for caddies, Noonan volunteers to caddy for a prominent and influential club member (Ted Knight). Meanwhile, Danny struggles to prepare for the high pressure Caddy Day golf tournament while absorbing New Age advice from wealthy golf guru Ty Webb (Chevy Chase).",
+        "genre": "Comedy, Sports",
+        "runtime": "1h 38m",
+        "trailer": "https://www.youtube.com/watch?v=x9Nl39uWEYk"
+      },
+      {
+        "id": 4,
+        "title": "National Lampoon's Animal House",
+        "poster": "https://www.walmart.com/ip/National-Lampoon-s-Animal-House-Movie-POSTER-27-x-40-Style-C/280252612",
+        "release year": "1978",
+        "summary": "When they arrive at college, socially inept freshmen Larry (Thomas Hulce) and Kent (Stephen Furst) attempt to pledge the snooty Omega Theta Pi House, but are summarily rejected. Lowering their standards, they try at the notoriously rowdy Delta Tau Chi House, and get in. The trouble is, the college dean (John Vernon) has it in for the Deltas. He has put them on Double Secret Probation and secretly assigned Omega's president (James Daughton) the task of having their charter revoked.",
+        "genre": "Comedy, Romance",
+        "runtime": "1h 49m",
+        "trailer": "https://www.youtube.com/watch?v=KWjtI6n5xWM"
+      },
+      {
+        "id": 5,
+        "title": "The Shawshank Redemption",
+        "poster": "https://www.amazon.com/Shawshank-Redemption-Movie-Poster-Inches/dp/B004US6G6A",
+        "release year": "1994",
+        "summary": "Andy Dufresne (Tim Robbins) is sentenced to two consecutive life terms in prison for the murders of his wife and her lover and is sentenced to a tough prison. However, only Andy knows he didn't commit the crimes. While there, he forms a friendship with Red (Morgan Freeman), experiences brutality of prison life, adapts, helps the warden, etc., all in 19 years.",
+        "genre": "Crime, Drama",
+        "runtime": "2h 22m",
+        "trailer": "https://www.youtube.com/watch?v=6hB3S9bIaco"
+      },
+      {
+        "id": 6,
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "poster": "https://www.amazon.com/RINGS-FELLOWSHIP-MOVIE-POSTER-ORIGINAL/dp/B008KPE6K2",
+        "release year": "2001",
+        "summary": "The future of civilization rests in the fate of the One Ring, which has been lost for centuries. Powerful forces are unrelenting in their search for it. But fate has placed it in the hands of a young Hobbit named Frodo Baggins (Elijah Wood), who inherits the Ring and steps into legend. A daunting task lies ahead for Frodo when he becomes the Ringbearer - to destroy the One Ring in the fires of Mount Doom where it was forged.",
+        "genre": "Fantasy, Adventure",
+        "runtime": "2h 58m",
+        "trailer": "https://www.youtube.com/watch?v=V75dMMIW2B4"
+      },
+      {
+        "id": 7,
+        "title": "The Lord of the Rings: The Two Towers",
+        "poster": "https://www.amazon.com/RINGS-TOWERS-MOVIE-POSTER-ORIGINAL/dp/B008DG3LQ8",
+        "release year": "2002",
+        "summary": "The sequel to the Golden Globe-nominated and AFI Award-winning The Lord of the Rings: The Fellowship of the Ring, The Two Towers follows the continuing quest of Frodo (Elijah Wood) and the Fellowship to destroy the One Ring. Frodo and Sam (Sean Astin) discover they are being followed by the mysterious Gollum. Aragorn (Viggo Mortensen), the Elf archer Legolas and Gimli the Dwarf encounter the besieged Rohan kingdom, whose once great King Theoden has fallen under Saruman's deadly spell.",
+        "genre": "Fantasy, Adventure",
+        "runtime": "2h 59m",
+        "trailer": "https://www.youtube.com/watch?v=LbfMDwc4azU"
+      },
+      {
+        "id": 8,
+        "title": "The Lord of the Rings: The Return of the King",
+        "poster": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
+        "release year": "2003",
+        "summary": "The culmination of nearly 10 years' work and conclusion to Peter Jackson's epic trilogy based on the timeless J.R.R. Tolkien classic, The Lord of the Rings: The Return of the King presents the final confrontation between the forces of good and evil fighting for control of the future of Middle-earth. Hobbits Frodo and Sam reach Mordor in their quest to destroy the `one ring', while Aragorn leads the forces of good against Sauron's evil army at the stone city of Minas Tirith.",
+        "genre": "Fantasy, Adventure",
+        "runtime": "3h 30m",
+        "trailer": "https://www.youtube.com/watch?v=r5X-hFf6Bwo"
+      },
+      {
+        "id": 9,
+        "title": "Braveheart",
+        "poster": "https://www.imdb.com/title/tt0112573/plotsummary",
+        "release year": "1995",
+        "summary": "William Wallace is the medieval Scottish patriot who is spurred into revolt against the English when the love of his life is slaughtered. Leading his army into battles that become a war, his advance into England threatens King Edward I's throne before he is captured and executed, but not before becoming a symbol for a free Scotland.",
+        "genre": "War, Drama",
+        "runtime": "2h 50m",
+        "trailer": "https://www.youtube.com/watch?v=nMft5QDOHek"
+      },
+      {
+        "id": 10,
+        "title": "Band of Brothers",
+        "poster": "https://www.amazon.com/Band-Brothers-Group-Movie-Poster/dp/B002O0DI2Q",
+        "release year": "2001",
+        "summary": "The series dramatizes the history of Easy Company, 2nd Battalion, 506th Parachute Infantry Regiment, of the 101st Airborne Division, from jump training in the United States through its participation in major actions in Europe, up until Japan's capitulation and the end of World War II.",
+        "genre": "War",
+        "runtime": "12h 6m",
+        "trailer": "https://www.youtube.com/watch?v=kyDkHvi9yeI"
+      },
+      {
+        "id": 11,
+        "title": "Catch Me if You Can",
+        "poster": "https://dreamworks.fandom.com/wiki/Catch_Me_If_You_Can",
+        "release year": "2002",
+        "summary": "Frank Abagnale, Jr. (Leonardo DiCaprio) worked as a doctor, a lawyer, and as a co-pilot for a major airline -- all before his 18th birthday. A master of deception, he was also a brilliant forger, whose skill gave him his first real claim to fame: At the age of 17, Frank Abagnale, Jr. became the most successful bank robber in the history of the U.S. FBI Agent Carl Hanratty (Tom Hanks) makes it his prime mission to capture Frank and bring him to justice, but Frank is always one step ahead of him.",
+        "genre": "Crime, Drama",
+        "runtime": "2h 21m",
+        "trailer": "https://www.youtube.com/watch?v=71rDQ7z4eFg"
+      },
+      {
+        "id": 12,
+        "title": "Hacksaw Ridge",
+        "poster": "https://www.allmovie.com/movie/hacksaw-ridge-v658784",
+        "release year": "2016",
+        "summary": "The true story of Pfc. Desmond T. Doss (Andrew Garfield), who won the Congressional Medal of Honor despite refusing to bear arms during WWII on religious grounds. Doss was drafted and ostracized by fellow soldiers for his pacifist stance but went on to earn respect and adoration for his bravery, selflessness and compassion after he risked his life -- without firing a shot -- to save 75 men in the Battle of Okinawa.",
+        "genre": "War, Drama",
+        "runtime": "2h 19m",
+        "trailer": "https://www.youtube.com/watch?v=s2-1hz1juBI"
+      },
+      {
+        "id": 13,
+        "title": "Miracle",
+        "poster": "https://www.rogerebert.com/reviews/miracle-2004",
+        "release year": "2004",
+        "summary": "When college coach Herb Brooks (Kurt Russell) is hired to helm the 1980 U.S. men's Olympic hockey team, he brings a unique and brash style to the ice. After assembling a team of hot-headed college all-stars, who are humiliated in an early match, Brooks unites his squad against a common foe, the heavily-favored Soviet team. As the U.S. squad tries to overcome insurmountable odds and win the gold medal, the team becomes a microcosm for American patriotism during the Cold War.",
+        "genre": "Sport, Drama",
+        "runtime": "2h 15m",
+        "trailer": "https://www.youtube.com/watch?v=Bd0_Dm2xlEM"
+      },
+      {
+        "id": 14,
+        "title": "Black Panther",
+        "poster": "https://www.amazon.com/Black-Panther-Official-Movie-Special/dp/1785866532",
+        "release year": "2018",
+        "summary": "After the death of his father, T'Challa returns home to the African nation of Wakanda to take his rightful place as king. When a powerful enemy suddenly reappears, T'Challa's mettle as king -- and as Black Panther -- gets tested when he's drawn into a conflict that puts the fate of Wakanda and the entire world at risk. Faced with treachery and danger, the young king must rally his allies and release the full power of Black Panther to defeat his foes and secure the safety of his people.",
+        "genre": "Action, Adventure",
+        "runtime": "2h 15m",
+        "trailer": "https://www.youtube.com/watch?v=xjDjIWPwcPU"
+      },
+      {
+        "id": 15,
+        "title": "The Warriors",
+        "poster": "https://en.wikipedia.org/wiki/The_Warriors_%28film%29",
+        "release year": "1979",
+        "summary": "A turf battle between New York City street gangs that rages from Coney Island to the Bronx. The Warriors are mistakenly fingered for the killing of a gang leader. Soon they have every gang in the city out to get revenge and they must make their way across the city to their own turf.",
+        "genre": "Action, Crime",
+        "runtime": "1h 30m",
+        "trailer": "https://www.youtube.com/watch?v=--gdB-nnQkU"
+      },
+      {
+        "id": 16,
+        "title": "The Outsiders",
+        "poster": "https://www.imdb.com/title/tt0086066/plotsummary",
+        "release year": "1983",
+        "summary": "A teen gang in rural Oklahoma, the Greasers are perpetually at odds with the Socials, a rival group. When Greasers Ponyboy (C. Thomas Howell) and Johnny (Ralph Macchio) get into a brawl that ends in the death of a Social member, the boys are forced to go into hiding. Soon Ponyboy and Johnny, along with the intense Dallas (Matt Dillon) and their other Greaser buddies, must contend with the consequences of their violent lives. While some Greasers try to achieve redemption, others meet tragic ends.",
+        "genre": "Drama, Teen",
+        "runtime": "2h 16m",
+        "trailer": "https://www.youtube.com/watch?v=IVRTWPPvtyU"
+      },
+      {
+        "id": 17,
+        "title": "Black Hawk Down",
+        "poster": "https://www.rottentomatoes.com/m/black_hawk_down",
+        "release year": "2001",
+        "summary": "The film takes place in 1993 when the U.S. sent special forces into Somalia to destabilize the government and bring food and humanitarian aid to the starving population. Using Black Hawk helicopters to lower the soldiers onto the ground, an unexpected attack by Somalian forces brings two of the helicopters down immediately. From there, the U.S. soldiers must struggle to regain their balance while enduring heavy gunfire.",
+        "genre": "War, History",
+        "runtime": "2h 32m",
+        "trailer": "https://www.youtube.com/watch?v=2GfBkC3qs78"
+      },
+      {
+        "id": 18,
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "poster": "https://www.amazon.com/Harry-Potter-Sorcerers-Stone-Regular/dp/B0016D6UH2",
+        "release year": "2001",
+        "summary": "Adaptation of the first of J.K. Rowling's popular children's novels about Harry Potter, a boy who learns on his eleventh birthday that he is the orphaned son of two powerful wizards and possesses unique magical powers of his own. He is summoned from his life as an unwanted child to become a student at Hogwarts, an English boarding school for wizards. There, he meets several friends who become his closest allies and help him discover the truth about his parents' mysterious deaths.",
+        "genre": "Fantasy, Adventure",
+        "runtime": "2h 32m",
+        "trailer": "https://www.youtube.com/watch?v=VyHV0BRtdxo"
+      },
+      {
+        "id": 19,
+        "title": "Harry Potter and the Chamber of Secrets",
+        "poster": "https://www.amazon.com/Potter-Chamber-Secrets-Poster-Radcliffe/dp/B000JVZH1C",
+        "release year": "2002",
+        "summary": "The second instalment of boy wizard Harry Potter's adventures at Hogwarts School of Witchcraft and Wizardry, based on the novel by JK Rowling. A mysterious elf tells Harry to expect trouble during his second year at Hogwarts, but nothing can prepare him for trees that fight back, flying cars, spiders that talk and deadly warnings written in blood on the walls of the school.",
+        "genre": "Fantasy, Adventure",
+        "runtime": "2h 41m",
+        "trailer": "https://www.youtube.com/watch?v=1bq0qff4iF8"
+      },
+      {
+        "id": 20,
+        "title": "Harry Potter and the Prisoner of Azkaban",
+        "poster": "https://www.rottentomatoes.com/m/harry_potter_and_the_prisoner_of_azkaban",
+        "release year": "2004",
+        "summary": "Harry Potter's (Daniel Radcliffe) third year at Hogwarts starts off badly when he learns deranged killer Sirius Black (Gary Oldman) has escaped from Azkaban prison and is bent on murdering the teenage wizard. While Hermione's (Emma Watson) cat torments Ron's (Rupert Grint) sickly rat, causing a rift among the trio, a swarm of nasty Dementors is sent to protect the school from Black. A mysterious new teacher helps Harry learn to defend himself, but what is his secret tie to Sirius Black?",
+        "genre": "Fantasy, Adventure",
+        "runtime": "2h 19m",
+        "trailer": "https://www.youtube.com/watch?v=lAxgztbYDbs"
+      },
+      {
+        "id": 21,
+        "title": "Harry Potter and the Goblet of Fire",
+        "poster": "https://www.imdb.com/title/tt0330373/synopsis",
+        "release year": "2005",
+        "summary": "The fourth movie in the Harry Potter franchise sees Harry (Daniel Radcliffe) returning for his fourth year at Hogwarts School of Witchcraft and Wizardry, along with his friends, Ron (Rupert Grint) and Hermione (Emma Watson). There is an upcoming tournament between the three major schools of magic, with one participant selected from each school by the Goblet of Fire. When Harry's name is drawn, even though he is not eligible and is a fourth player, he must compete in the dangerous contest.",
+        "genre": "Fantasy, Adventure",
+        "runtime": "2h 37m",
+        "trailer": "https://www.youtube.com/watch?v=3EGojp4Hh6I"
+      },
+      {
+        "id": 22,
+        "title": "Harry Potter and the Order of the Phoenix",
+        "poster": "https://harrypotter.fandom.com/wiki/Harry_Potter_and_the_Order_of_the_Phoenix_%28film%29",
+        "release year": "2007",
+        "summary": "Now in his fifth year at Hogwarts, Harry (Daniel Radcliffe) learns that many in the wizarding community do not know the truth of his encounter with Lord Voldemort. Cornelius Fudge, minister of Magic, appoints his toady, Dolores Umbridge, as Defense Against the Dark Arts teacher, for he fears that professor Dumbledore will take his job. But her teaching is deficient and her methods, cruel, so Harry prepares a group of students to defend the school against a rising tide of evil.",
+        "genre": "Fantasy, Adventure",
+        "runtime": "2h 18m",
+        "trailer": "https://www.youtube.com/watch?v=y6ZW7KXaXYk"
+      },
+      {
+        "id": 23,
+        "title": "Harry Potter and the Half-Blood Prince",
+        "poster": "https://harrypotter.fandom.com/wiki/Harry_Potter_and_the_Half-Blood_Prince_%28film%29",
+        "release year": "2009",
+        "summary": "As Death Eaters wreak havoc in both Muggle and Wizard worlds, Hogwarts is no longer a safe haven for students. Though Harry (Daniel Radcliffe) suspects there are new dangers lurking within the castle walls, Dumbledore is more intent than ever on preparing the young wizard for the final battle with Voldemort. Meanwhile, teenage hormones run rampant through Hogwarts, presenting a different sort of danger. Love may be in the air, but tragedy looms, and Hogwarts may never be the same again.",
+        "genre": "Fantasy, Adventure",
+        "runtime": "2h 33m",
+        "trailer": "https://www.youtube.com/watch?v=JYLdTuL9Wjw"
+      },
+      {
+        "id": 24,
+        "title": "Harry Potter and the Deathly Hallows: Part 1",
+        "poster": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_1",
+        "release year": "2010",
+        "summary": "Without the guidance and protection of their professors, Harry (Daniel Radcliffe), Ron (Rupert Grint) and Hermione (Emma Watson) begin a mission to destroy the Horcruxes, the sources of Voldemort's immortality. Though they must rely on one another more than ever, dark forces threaten to tear them apart. Voldemort's Death Eaters have seized control of the Ministry of Magic and Hogwarts, and they are searching for Harry -- even as he and his friends prepare for the ultimate showdown.",
+        "genre": "Fantasy, Adventure",
+        "runtime": "2h 26m",
+        "trailer": "https://www.youtube.com/watch?v=Su1LOpjvdZ4"
+      },
+      {
+        "id": 25,
+        "title": "Harry Potter and the Deathly Hallows: Part II",
+        "poster": "https://harrypotter.fandom.com/wiki/Harry_Potter_and_the_Deathly_Hallows:_Part_2",
+        "release year": "2011",
+        "summary": "A clash between good and evil awaits as young Harry (Daniel Radcliffe), Ron (Rupert Grint) and Hermione (Emma Watson) prepare for a final battle against Lord Voldemort (Ralph Fiennes). Harry has grown into a steely lad on a mission to rid the world of evil. The friends must search for the Horcruxes that keep the dastardly wizard immortal. Harry and Voldemort meet at Hogwarts Castle for an epic showdown where the forces of darkness may finally meet their match.",
+        "genre": "Fantasy, Adventure",
+        "runtime": "2h 10m",
+        "trailer": "https://www.youtube.com/watch?v=5NYt1qirBWg"
+      },
+      {
+        "id": 26,
+        "title": "The Avengers",
+        "poster": "https://m.media-amazon.com/images/I/71xZtfOsHdL._AC_SY879_.jpg",
+        "release year": "2012",
+        "summary": "When Thor's evil brother, Loki (Tom Hiddleston), gains access to the unlimited power of the energy cube called the Tesseract, Nick Fury (Samuel L. Jackson), director of S.H.I.E.L.D., initiates a superhero recruitment effort to defeat the unprecedented threat to Earth. Joining Fury's dream team are Iron Man (Robert Downey Jr.), Captain America (Chris Evans), the Hulk (Mark Ruffalo), Thor (Chris Hemsworth), the Black Widow (Scarlett Johansson) and Hawkeye (Jeremy Renner).",
+        "genre": "Action, Adventure, Sci-Fi",
+        "runtime": "2h 23m",
+        "trailer": "https://www.youtube.com/watch?v=eOrNdBpGMv8&ab_channel=MarvelEntertainment"
+      },
+      {
+        "id": 27,
+        "title": "Avengers: Age of Ultron",
+        "poster": "https://static.wikia.nocookie.net/headhuntersholosuite/images/c/c9/Avengers_-_Age_of_Ultron.jpg/revision/latest?cb=20150422122640",
+        "release year": "2015",
+        "summary": "When Tony Stark (Robert Downey Jr.) jump-starts a dormant peacekeeping program, things go terribly awry, forcing him, Thor (Chris Hemsworth), the Incredible Hulk (Mark Ruffalo) and the rest of the Avengers to reassemble. As the fate of Earth hangs in the balance, the team is put to the ultimate test as they battle Ultron, a technological terror hell-bent on human extinction. Along the way, they encounter two mysterious and powerful newcomers, Pietro and Wanda Maximoff.",
+        "genre": "Action, Adventure, Sci-Fi",
+        "runtime": "2h 21m",
+        "trailer": "https://www.youtube.com/watch?v=tmeOjFno6Do&ab_channel=MarvelEntertainment"
+      },
+      {
+        "id": 28,
+        "title": "Avengers: Infinity War",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_.jpg",
+        "release year": "2018",
+        "summary": "Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet -- the evil Thanos. On a mission to collect all six Infinity Stones, Thanos plans to use the artifacts to inflict his twisted will on reality. The fate of the planet and existence itself has never been more uncertain as everything the Avengers have fought for has led up to this moment.",
+        "genre": "Action, Adventure, Sci-Fi",
+        "runtime": "2h 29m",
+        "trailer": "https://www.youtube.com/watch?v=6ZfuNTqbHE8&ab_channel=MarvelEntertainment"
+      },
+      {
+        "id": 29,
+        "title": "Avengers: Endgame",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg",
+        "release year": "2019",
+        "summary": "Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain America and Bruce Banner -- must figure out a way to bring back their vanquished allies for an epic showdown with Thanos -- the evil demigod who decimated the planet and the universe.",
+        "genre": "Action, Adventure, Sci-Fi",
+        "runtime": "3h 02m",
+        "trailer": "https://www.youtube.com/watch?v=TcMBFSGVi1c&ab_channel=MarvelEntertainment"
+      },
+      {
+        "id": 30,
+        "title": "Black Clover",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/6/69/Black_Clover%2C_volume_1.jpg",
+        "release year": "2015",
+        "summary": "The series focuses on Asta, a young orphan who is left to be raised in an orphanage alongside his fellow orphan, Yuno. While everyone is born with the ability to utilize mana in the form of magical power, Asta, with no magic however, instead focuses on physical strength.",
+        "runtime": "21h 6m",
+        "trailer": "https://www.youtube.com/watch?v=VUmSZpBtAUA&ab_channel=JPAnime"
+      }
+    ]
+  }
