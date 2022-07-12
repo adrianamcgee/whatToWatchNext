@@ -1,76 +1,41 @@
 import { useState, useEffect } from "react";
-//import { Route } from "react-router-dom";
-
+import ShowsContainer from "./ShowsContainer"
+import Search from "./Search";
+import Header from "./Header"
+import RandomButton from "./RandomButton"
+import MovieForm from "./MovieForm"
+import MovieOfTheWeek from "./MovieOfTheWeek"
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+
 
 function App() {
-
+  const [searchText, setSearchText] = useState("");
   const [shows, setShows] = useState([])
 
   useEffect(() => {
     fetch ("http://localhost:3000/Shows")
     .then (res => res.json())
-    .then (shows => setShows(shows))
+    .then (showData => setShows(showData))
   }, [])
 
-  function onAddWatch(newWatch){
-    return setShows([...shows, newWatch]);
-  };
+  // function onAddWatch(newWatch){
+  //    return setShows([...shows, newWatch]);
+  // };
 
-  function App() {
-    return (
-      <Router>
-        <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/users">Users</Link>
-              </li>
-            </ul>
-          </nav>
-  
-          {/* A <Switch> looks through its children <Route>s and
-              renders the first one that matches the current URL. */}
-          <Routes>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/users">
-              <Users />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Routes>
-        </div>
-      </Router>
-    );
+  function handleChange(newText){
+    setSearchText(newText);
   }
-  
-  function Home() {
-    return <h2>Home</h2>;
-  }
-  
-  function About() {
-    return <h2>About</h2>;
-  }
-  
-  function Users() {
-    return <h2>Users</h2>;
-  }
-  
+
+  return (
+    <div className="container">
+      <Header />
+      <Search onChange={handleChange}/>
+      <RandomButton />
+      <ShowsContainer shows={shows} searchText={searchText}/>
+      <MovieForm />
+      <MovieOfTheWeek />
+    </div>
+  );
 }
 
 export default App;
