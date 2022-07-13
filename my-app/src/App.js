@@ -8,6 +8,7 @@ import MovieForm from "./MovieForm"
 import MovieOfTheWeek from "./MovieOfTheWeek"
 import React from "react";
 import Home from "./Home";
+import FilmDetails from "./FilmDetails";
 
 
 function App() {
@@ -21,14 +22,13 @@ function App() {
     .then (showData => setShows(showData))
   }, [])
 
-  // function onAddWatch(newWatch){
-  //    return setShows([...shows, newWatch]);
-  // };
+   function onAddWatch(newWatch){
+      return setShows([...shows, newWatch]);
+   };
 
   function handleChange(newText){
     setSearchText(newText);
   }
-<Search onChange={handleChange}/>
 
 
   return (
@@ -39,12 +39,17 @@ function App() {
         </Route>
         <Route>
          <Header />
+        
          <Switch>
           <Route exact path="/shows">
+          <Search onChange={handleChange}/>
             <ShowsContainer shows={shows} searchText={searchText}/>
           </Route>
           <Route exact path="/shows/new">
-            <MovieForm />
+            <MovieForm onAddWatch={onAddWatch}/>
+          </Route>
+          <Route exact path="/shows/:id">
+            <FilmDetails />
           </Route>
           <Route exact path="/weeksmovie">
             <MovieOfTheWeek />
