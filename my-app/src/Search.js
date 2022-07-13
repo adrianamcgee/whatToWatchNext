@@ -6,7 +6,7 @@ function Search({onChange}) {
   }
   return (
     <div className="search">
-      <input onChange={handleChange} type="text" className="searchTerm" />
+      <input onChange={handleChange} type="text" className="searchTerm" placeholder="Search..."/>
       {/* For the advanced deliverables: add a checkbox to allow sorting the planeteer */}
     </div>
   );

@@ -5,16 +5,15 @@ function Home() {
     return(
         <div className='row'>
             <section className='column column1'>
-                <h1>What to Watch Next</h1>
+                <h1>Movie Fanatics</h1>
                 <div className='typing-slider'>
-                    <p className='subheader'>What movie or show should you watch next?</p>
-                    <p className='subheader'>By and for you.</p>
+                    <p className='subheader'>Need Help Finding A Movie To Watch?</p>
                 </div>
             </section>
             <section className='column column2'>               
                 <NavLink exact className="button" to="/" style= { { textDecoration: 'none' }}>
                     <div className='card card1'>
-                        <h5>About</h5>
+                        <h5>Home</h5>
                     </div>
                 </NavLink>
                 

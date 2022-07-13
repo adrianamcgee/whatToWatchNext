@@ -8,10 +8,17 @@ function ShowsContainer({shows, searchText}) {
     }
   })
   return (
-    <ul className="cards">
-      {renderShows}
-    </ul>
+    <div className="container">
+        {renderShows}
+    </div>
   );
 }
 
 export default ShowsContainer;
+
+
+function filmPosters({shows}){
+  const showsPosters = shows.map(show => {
+    return show.img;
+  });
+}

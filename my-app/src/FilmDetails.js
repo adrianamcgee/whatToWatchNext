@@ -28,12 +28,17 @@ function FilmDetails() {
           <img
             src={poster}
             alt={"RENDER PERSON NAME"}
-            className="card__image"
+            className="filmPoster"
           />
           <div className="card__content">
             <div className="card__title">{title}</div>
             <p className="card__text">{summary}</p>
             <div className="card__detail">
+            <div className='desc'>
+              <h4>{title}</h4>
+              <p>{genre}</p>
+            
+            </div>
               <p>{genre}</p>
               <p>
                 {runtime}

@@ -12,3 +12,53 @@ code {
     monospace;
 }
 
+.filmPoster{
+  width: 75%;
+  height: 75%;
+}
+
+.cards  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 325px;
+  width: 100%;
+}
+.search, .navbar{
+  text-align: center;
+  position: relative;
+}
+
+.headerbackground{
+  width: 100%;
+}
+.navbar .button{
+  width: 100%;
+  background-color: black;
+  display: inline;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar .button:hover {
+  background-color: purple;
+  color: black;
+}
+.swiper{
+  width: 80%;
+  height: fit-content;
+}
+.searchTerm {
+  text-align: center;
+  padding: 6px;
+  border: none;
+  width: 50%;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}

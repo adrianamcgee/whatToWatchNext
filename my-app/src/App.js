@@ -39,10 +39,9 @@ function App() {
         </Route>
         <Route>
          <Header />
-        
          <Switch>
           <Route exact path="/shows">
-          <Search onChange={handleChange}/>
+            <Search onChange={handleChange}/>
             <ShowsContainer shows={shows} searchText={searchText}/>
           </Route>
           <Route exact path="/shows/new">
