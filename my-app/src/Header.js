@@ -9,13 +9,13 @@ function Header() {
             <NavLink exact className="button" to="/">
               Home
             </NavLink>
-            <NavLink exact className="button" to="/restaurants">
+            <NavLink exact className="button" to="/shows">
               Movies and Shows
             </NavLink>
-            <NavLink exact className="button" to="/restaurants/new">
+            <NavLink exact className="button" to="/shows/new">
               Add Film
             </NavLink>
-            <NavLink exact className="button" to="/weeksresto">
+            <NavLink exact className="button" to="/weeksmovie">
               Movie of the Week
             </NavLink>
           </div>

@@ -18,19 +18,19 @@ function Home() {
                     </div>
                 </NavLink>
                 
-                <NavLink exact className="button" to="/restaurants" style= { { textDecoration: 'none' }}>
+                <NavLink exact className="button" to="/shows" style= { { textDecoration: 'none' }}>
                     <div className='card card2'>
                         <h5>Movies and Shows</h5>
                     </div>
                 </NavLink>                
                 
-                <NavLink exact className="button" to="/restaurants/new" style= { { textDecoration: 'none' }}>
+                <NavLink exact className="button" to="/shows/new" style= { { textDecoration: 'none' }}>
                     <div className='card card3'>
                         <h5>Add a Movie or Show</h5>
                     </div>
                 </NavLink>                
             
-                <NavLink exact className="button" to="/weeksresto" style= { { textDecoration: 'none' }}>
+                <NavLink exact className="button" to="/weeksmovie" style= { { textDecoration: 'none' }}>
                         <div className='card card4'>
                         <h5>Movie of the Week</h5>
                     </div>

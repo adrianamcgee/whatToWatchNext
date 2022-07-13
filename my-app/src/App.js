@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import ShowsContainer from "./ShowsContainer"
 import Search from "./Search";
@@ -7,6 +7,7 @@ import Header from "./Header"
 import MovieForm from "./MovieForm"
 import MovieOfTheWeek from "./MovieOfTheWeek"
 import React from "react";
+import Home from "./Home";
 
 
 function App() {
@@ -27,15 +28,30 @@ function App() {
   function handleChange(newText){
     setSearchText(newText);
   }
+<Search onChange={handleChange}/>
+
 
   return (
     <div className="container">
-      {/* <Header /> */}
-      <Search onChange={handleChange}/>
-      {/* <RandomButton /> */}
-      <ShowsContainer shows={shows} searchText={searchText}/>
-      {/* <MovieForm />
-      <MovieOfTheWeek /> */}
+      <Switch>
+        <Route exact path="/">
+          <Home/>
+        </Route>
+        <Route>
+         <Header />
+         <Switch>
+          <Route exact path="/shows">
+            <ShowsContainer shows={shows} searchText={searchText}/>
+          </Route>
+          <Route exact path="/shows/new">
+            <MovieForm />
+          </Route>
+          <Route exact path="/weeksmovie">
+            <MovieOfTheWeek />
+          </Route>
+      </Switch>
+      </Route>
+    </Switch>
     </div>
   );
 }
