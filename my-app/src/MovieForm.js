@@ -4,12 +4,13 @@ function MovieForm({ onAddWatch }) {
     const [rating, setRating] = useState(0)
     
     const [formData, setFormData] = useState({
-        name: "",
-        image: "",
-        address: "",
-        review: "",
-        addedBy: "",
-        additionalReviews: []
+        title: "",
+        poster: "",
+        releaseYear: "",
+        summary: "",
+        genre: "",
+        runtime: "",
+        trailer: ""
       });
 
     function handleChange(e){
@@ -31,11 +32,13 @@ function MovieForm({ onAddWatch }) {
         .then((resp) => resp.json())
         .then((newMovie) => {onAddWatch(newMovie);
         setFormData({
-            name: "",
-            image: "",
-            address: "",
-            addedBy: "",
-            review: "",
+            title: "",
+        poster: "",
+        releaseYear: "",
+        summary: "",
+        genre: "",
+        runtime: "",
+        trailer: ""
         });
         });
     };
@@ -53,15 +56,15 @@ function MovieForm({ onAddWatch }) {
                     <h2>Add a Movie or Show</h2>
 
                     <div className="formitem">                
-                        <input type="text" id="yourname" placeholder="Your name..." name="addedBy" value={formData.addedBy} onChange={handleChange}/>
+                        <input type="text" id="yourname" placeholder="Movie title..." name="addedBy" value={formData.title} onChange={handleChange}/>
                     </div>
 
                     <div className="formitem">                
-                        <input type="text" id="name" placeholder="Name of movie or show..." name="name" value={formData.name} onChange={handleChange}/>
+                        <input type="text" id="name" placeholder="Poster Url..." name="name" value={formData.poster} onChange={handleChange}/>
                     </div>
 
                     <div className="formitem">                        
-                        <input type="text" id="image" placeholder="Poster..." name="image" value={formData.poster} onChange={handleChange}/>
+                        <input type="text" id="image" placeholder="Release year..." name="image" value={formData.releaseYear} onChange={handleChange}/>
                     </div>
 
                     <div className="formitem">                        
@@ -70,6 +73,14 @@ function MovieForm({ onAddWatch }) {
 
                     <div className="formitem">                        
                         <textarea id="review" name="review" placeholder="Summary.." value={formData.summary} onChange={handleChange} style={{height:200}}></textarea>
+                    </div>
+
+                    <div className="formitem">                        
+                        <input type="text" id="runtime" placeholder="Movie runtime..." name="address" value={formData.runtime} onChange={handleChange}/>
+                    </div>
+
+                    <div className="formitem">                        
+                        <input type="text" id="trailer" placeholder="Movie trailer..." name="address" value={formData.trailer} onChange={handleChange}/>
                     </div>
 
                     <input type="hidden" id="additionalReviews" name="additionalReviews" value={formData.additionalReviews} onChange={handleChange}/>
