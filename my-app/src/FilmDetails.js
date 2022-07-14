@@ -27,7 +27,7 @@ function FilmDetails() {
         <div className="card">
           <img
             src={poster}
-            alt={"RENDER PERSON NAME"}
+            alt={"Broken Image"}
             className="filmPoster"
           />
           <div className="card__content">

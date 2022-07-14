@@ -13,16 +13,12 @@ code {
 }
 
 .filmPoster{
-  width: 40%;
-  height: 40%;
+  width: 20%;
+  height: 20%;
 }
 
 .cards  {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 325px;
-  width: 100%;
 }
 .search, .navbar{
   text-align: center;
@@ -40,19 +36,16 @@ code {
   text-align: center;
 }
 
-.container{
-  width: 100%;
-  height: 100vh;
-}
-
 .navbar .button:hover {
   background-color: purple;
   color: black;
 }
-.swiper{
+.swiper-slide{
   width: 80%;
+  display: inline-block;
   height: fit-content;
-}
+  justify-content: space-between;
+} 
 .searchTerm {
   text-align: center;
   padding: 6px;
