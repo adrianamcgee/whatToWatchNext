@@ -22,10 +22,6 @@ function App() {
     .then (showData => setShows(showData))
   }, [])
 
-   function onAddWatch(newWatch){
-      return setShows([...shows, newWatch]);
-   };
-
   function handleChange(newText){
     setSearchText(newText);
   }
@@ -45,7 +41,7 @@ function App() {
             <ShowsContainer shows={shows} searchText={searchText}/>
           </Route>
           <Route exact path="/shows/new">
-            <MovieForm onAddWatch={onAddWatch}/>
+            <MovieForm setShows={setShows}/>
           </Route>
           <Route exact path="/shows/:id">
             <FilmDetails />
