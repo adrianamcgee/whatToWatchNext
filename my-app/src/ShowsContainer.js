@@ -10,8 +10,15 @@ function ShowsContainer({shows, searchText}) {
   })
   return (
     <div className="cards">
-          {renderShows}
+    <div className="cards1">
+      {renderShows}
     </div>
+      <div className="Movie-Gifs">
+        <img src="https://c.tenor.com/k70nB4YylS4AAAAC/tripped-ouch.gif" className="Gif" alt="Gif Picture" />
+        <img src="https://bestanimations.com/media/basketball/226172115epic-basketball-dunk-animated-gif-2.gif" className="Gif" alt="Gif Picture" />
+
+      </div>
+</div>
   );
 }
 

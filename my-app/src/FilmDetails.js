@@ -28,7 +28,7 @@ function FilmDetails() {
           <img
             src={poster}
             alt={"Broken Image"}
-            className="filmPoster"
+            className="swiper-img"
           />
           <div className="card__content">
             <div className="card__title">{title}</div>
@@ -36,7 +36,6 @@ function FilmDetails() {
             <div className="card__detail">
             <div className='desc'>
               <h4>{title}</h4>
-              <p>{genre}</p>
             
             </div>
               <p>{genre}</p>

@@ -1,6 +1,8 @@
 import { useState} from "react";
 import React from "react";
 import ShowCard from "./ShowCard";
+import { NavLink } from "react-router-dom";
+
 
 
 function MovieOfTheWeek(){
@@ -10,7 +12,11 @@ function MovieOfTheWeek(){
         .then(movOfWeekData => setMovOfWeek(movOfWeekData)) 
     
     return (
-        <ShowCard key={movOfWeek.id} show={movOfWeek} />
+        <div className="swiper">
+            <NavLink to={`/shows/${movOfWeek.id}`}>
+              <img src={movOfWeek.poster} className="swiper-img" />
+            </NavLink>
+</div>
       );
 }
 

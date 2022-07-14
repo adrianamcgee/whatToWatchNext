@@ -10,10 +10,10 @@ function Header() {
               Home
             </NavLink>
             <NavLink exact className="button" to="/shows">
-              Movies and Shows
+              Movie List
             </NavLink>
             <NavLink exact className="button" to="/shows/new">
-              Add Film
+              Add a Movie
             </NavLink>
             <NavLink exact className="button" to="/weeksmovie">
               Movie of the Week

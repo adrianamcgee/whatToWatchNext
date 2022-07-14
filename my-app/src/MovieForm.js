@@ -42,7 +42,7 @@ function MovieForm({setShows}) {
 }
 
     return(
-        <div className="addressto">
+        <div className="addmovie">
             <form onSubmit={handleSubmit} autoComplete="off" className="addresto">
                     <h2 className="h2Form">Add a Movie or Show</h2>
 
