@@ -111,7 +111,7 @@ html{
 .addmovie {
   text-align: center;
   position: fixed;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -192,6 +192,7 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%); 
   width: 71%;
+  justify-content: space-between;
 
   
 }
