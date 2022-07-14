@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom'
 function Home() {
     return(
         <div className='row'>
-            <section className='column column1'>
+            <section className='column-column1'>
                 <h1>Movie Fanatics</h1>
                 <div className='typing-slider'>
                     <p className='subheader'>Need Help Finding A Movie To Watch?</p>

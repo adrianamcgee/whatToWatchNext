@@ -11,6 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html{
+  background-color: black;
+}
 .swiper-slide{
   margin: 10px auto;
   width: 95%;
@@ -28,26 +32,33 @@ code {
   100% {margin-right: 0%;}
 }
 
-.swiper-wrapper img{
+
+.swiper-slide img{
   transition: all 300ms;
   -webkit-transition: all 300ms;
 }
 
-.swiper-wrapper:hover .swiper-slide{
+.cards:hover .swiper-slide{
   animation-play-state: paused;
 }
 .swiper-slide img {
   width: 200px;
   height: 200px;
+  outline: solid purple 2px;
 }
 .cards  {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  width: 100%;
+  overflow: hidden;
 }
 .search, .navbar{
   text-align: center;
   position: relative;
+}
+.navbar {
+  width: 100%;
+  display: flex;
 }
 
 .headerbackground{
@@ -59,6 +70,7 @@ code {
   display: inline;
   color: #f2f2f2;
   text-align: center;
+  outline: solid purple 2px;
 }
 
 .navbar .button:hover {
@@ -73,4 +85,12 @@ code {
   margin-top: 8px;
   margin-right: 16px;
   font-size: 17px;
+  outline: solid purple 2px
+}
+.h2Form, .column-column1 {
+  color: white;
+}
+
+.addressto {
+  text-align: center;
 }

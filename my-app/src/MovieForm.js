@@ -42,8 +42,9 @@ function MovieForm({setShows}) {
 }
 
     return(
+        <div className="addressto">
             <form onSubmit={handleSubmit} autoComplete="off" className="addresto">
-                    <h2>Add a Movie or Show</h2>
+                    <h2 className="h2Form">Add a Movie or Show</h2>
 
                     <div className="formitem">                
                         <input onChange={handleChange} type="text" id="yourname" placeholder="Movie title..." name="title" value={formState.title}/>
@@ -78,6 +79,7 @@ function MovieForm({setShows}) {
                         <input type="submit" value="Add Movie" />
                     </div>   
                 </form>
+        </div>
     );
 }
 
