@@ -9,9 +9,9 @@ function ShowsContainer({shows, searchText}) {
     }
   })
   return (
-    <ul className="cards">
-        {renderShows}
-    </ul>
+    <div className="cards">
+          {renderShows}
+    </div>
   );
 }
 
