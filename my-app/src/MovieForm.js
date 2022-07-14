@@ -44,34 +44,34 @@ function MovieForm({setShows}) {
     return(
         <div className="addmovie">
             <form onSubmit={handleSubmit} autoComplete="off" className="addresto">
-                    <h2 className="h2Form">Add a Movie or Show</h2>
+                    <h2 className="h2Form">Add a Movie to the Collection </h2>
 
                     <div className="formitem">                
-                        <input onChange={handleChange} type="text" id="yourname" placeholder="Movie title..." name="title" value={formState.title}/>
+                        <input onChange={handleChange} type="text" id="yourname" placeholder="Movie title..." style={{height:20}} name="title" value={formState.title}/>
                     </div>
 
                     <div className="formitem">                
-                        <input type="text" id="name" placeholder="Poster Url..." name="poster" value={formState.poster} onChange={handleChange}/>
+                        <input type="text" id="name" placeholder="Poster Url..." name="poster" style={{height:20}} value={formState.poster} onChange={handleChange}/>
                     </div>
 
                     <div className="formitem">                        
-                        <input type="text" id="image" placeholder="Release year..." name="releaseYear" value={formState.releaseYear} onChange={handleChange}/>
+                        <input type="text" id="image" placeholder="Release year..." style={{height:20}} name="releaseYear" value={formState.releaseYear} onChange={handleChange}/>
                     </div>
 
                     <div className="formitem">                        
-                        <input type="text" id="address" placeholder="Genre..." name="genre" value={formState.genre} onChange={handleChange}/>
+                        <input type="text" id="address" placeholder="Genre..." name="genre" style={{height:20}} value={formState.genre} onChange={handleChange}/>
+                    </div>
+
+
+                    <div className="formitem">                        
+                        <input type="text" id="runtime" placeholder="Movie runtime..." name="runtime" style={{height:20}} value={formState.runtime} onChange={handleChange}/>
                     </div>
 
                     <div className="formitem">                        
-                        <textarea id="review" name="summary" placeholder="Summary.." style={{height:200}} value={formState.summary} onChange={handleChange}></textarea>
+                        <input type="text" id="trailer" placeholder="Movie trailer..." name="trailer"  style={{height:20}} value={formState.trailer} onChange={handleChange}/>
                     </div>
-
                     <div className="formitem">                        
-                        <input type="text" id="runtime" placeholder="Movie runtime..." name="runtime" value={formState.runtime} onChange={handleChange}/>
-                    </div>
-
-                    <div className="formitem">                        
-                        <input type="text" id="trailer" placeholder="Movie trailer..." name="trailer" value={formState.trailer} onChange={handleChange}/>
+                        <textarea id="review" name="summary" placeholder="Summary.." style={{height:30, width: 140}} value={formState.summary} onChange={handleChange}></textarea>
                     </div>
                     {/* <StarRating onChange={log}/> */}
 
