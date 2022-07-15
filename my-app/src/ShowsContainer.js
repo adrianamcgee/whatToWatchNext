@@ -13,10 +13,6 @@ function ShowsContainer({shows, searchText}) {
     <div className="cards1">
       {renderShows}
     </div>
-      <div className="Movie-Gifs">
-        
-
-      </div>
 </div>
   );
 }
