@@ -24,7 +24,11 @@ function App() {
 
   function handleChange(newText){
     setSearchText(newText);
-  }
+  };
+
+  function onAddMovie(newMovie){
+    return setShows([...shows, newMovie]);
+  };
 
 
   return (
@@ -38,10 +42,10 @@ function App() {
          <Switch>
           <Route exact path="/shows">
             <Search onChange={handleChange}/>
-            <ShowsContainer shows={shows} searchText={searchText}/>
+            <ShowsContainer shows={shows} searchText={searchText} setSearchText={setSearchText}/>
           </Route>
           <Route exact path="/shows/new">
-            <MovieForm setShows={setShows}/>
+            <MovieForm setShows={setShows} onAddMovie={onAddMovie}/>
           </Route>
           <Route exact path="/shows/:id">
             <FilmDetails />

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function MovieForm({setShows}) {
+function MovieForm({setShows, onAddMovie}) {
     const [formState, setFormState] = useState({
         title: "",
         poster: "",
@@ -21,25 +21,29 @@ function MovieForm({setShows}) {
     }
     function handleSubmit(e){
         e.preventDefault();
-        const config = {
+        fetch ("http://localhost:3000/Shows", {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
             Accept: "application/json",
             },
-            body: JSON.stringify(formState),
-        }
-        fetch ("http://localhost:3000/Shows", config)
+            body: JSON.stringify({...formState}),
+        })
         .then (res => res.json())
-        .then(show => {
-            setShows((prevShowsState) => {
-                return {
-                    ...prevShowsState,
-                    show,
-                };
-            });
-    });
-}
+        .then((newMovie) => {onAddMovie(newMovie); 
+                setFormState ({
+                    title: "",
+                    poster: "",
+                    releaseYear: "",
+                    summary: "",
+                    genre: "",
+                    runtime: "",
+                    trailer: ""
+                });
+                });
+            
+    };
+
 
     return(
         <div className="addmovie">
@@ -81,6 +85,6 @@ function MovieForm({setShows}) {
                 </form>
         </div>
     );
-}
 
+}
 export default MovieForm;
