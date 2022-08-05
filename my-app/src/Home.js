@@ -1,5 +1,5 @@
 
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function Home() {
     return(
@@ -36,7 +36,7 @@ function Home() {
             
                 <NavLink exact className="button" to="/weeksmovie" style= { { textDecoration: 'none' }}>
                         <div className='card-card4'>
-                        <h5>Movie of the Week</h5>
+                        <h5>Login</h5>
                     </div>
                 </NavLink>
             </section>

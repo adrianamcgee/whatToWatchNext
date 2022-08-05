@@ -12,7 +12,7 @@ function MovieForm({setShows, onAddMovie}) {
       });
 
     function handleChange(event){
-        setFormState((prevFormState) => {
+        setFormState((prevFormState) => { 
             return {
                 ...prevFormState,
                 [event.target.name]: event.target.value,

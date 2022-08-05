@@ -5,10 +5,10 @@ import ShowsContainer from "./ShowsContainer"
 import Search from "./Search";
 import Header from "./Header"
 import MovieForm from "./MovieForm"
-import MovieOfTheWeek from "./MovieOfTheWeek"
 import React from "react";
 import Home from "./Home";
 import FilmDetails from "./FilmDetails";
+import EditBttn from "./EditBttn";
 
 
 function App() {
@@ -30,6 +30,28 @@ function App() {
     return setShows([...shows, newMovie]);
   };
 
+  //function for editing movie
+  const handleEditShow = (editedShow) => {
+    const updatedShowsArray = shows.map((oldShow) => {
+      if (oldShow.id === editedShow.id){
+        return editedShow;
+      } else {
+        return oldShow;
+      }
+    })
+    setShows(updatedShowsArray);
+  }
+
+  //delete function for DELETE BUTTON
+  function handleDeleteShows(deletedID) {
+    // console.log(deletedID)
+    const updatedShows = shows.filter(
+      (show) => shows.id !== deletedID
+      
+    );
+    setShows(updatedShows)
+  }
+
 
   return (
     <div className="container">
@@ -50,9 +72,9 @@ function App() {
           <Route exact path="/shows/:id">
             <FilmDetails />
           </Route>
-          <Route exact path="/weeksmovie">
-            <MovieOfTheWeek />
-          </Route>
+          <Route exact path="/show/:id/edit">
+          <EditBttn handleEditShow={handleEditShow} />
+        </Route>
       </Switch>
       </Route>
     </Switch>
