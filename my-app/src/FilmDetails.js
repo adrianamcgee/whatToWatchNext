@@ -40,7 +40,7 @@ function FilmDetails() {
               <h4>{title}</h4>
               <button onClick={handleDeleteShows}>DELETE</button>
             <NavLink to={`/Shows/${id}/edit`}
-              <button onClick={EditBttn}>EDIT</button>
+            <button onClick={EditBttn}> EDIT </button>
             </NavLink>
             </div>
               <p>{genre}</p>

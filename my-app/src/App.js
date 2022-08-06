@@ -17,7 +17,7 @@ function App() {
 
 
   useEffect(() => {
-    fetch ("http://localhost:3000/Shows")
+    fetch ("http://localhost:9292/Shows")
     .then (res => res.json())
     .then (showData => setShows(showData))
   }, [])
@@ -29,6 +29,10 @@ function App() {
   function onAddMovie(newMovie){
     return setShows([...shows, newMovie]);
   };
+
+  //function onAddUser(newUser){
+  //  return setUsers([...user, newUser]);
+ // };
 
   //function for editing movie
   const handleEditShow = (editedShow) => {
