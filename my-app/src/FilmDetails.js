@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import EditBttn from "./EditBttn";
 import { NavLink } from "react-router-dom"
 
-function FilmDetails() {
+function FilmDetails({handleDeleteShows}) {
 
     
     const [show, setShow] = useState(null);
@@ -39,9 +39,9 @@ function FilmDetails() {
             <div className='desc'>
               <h4>{title}</h4>
               <button onClick={handleDeleteShows}>DELETE</button>
-            <NavLink to={`/Shows/${id}/edit`}
-            <button onClick={EditBttn}> EDIT </button>
-            </NavLink>
+            <div>
+            <button onClick={EditBttn}> EjDIT </button>
+            </div>
             </div>
               <p>{genre}</p>
               <p>

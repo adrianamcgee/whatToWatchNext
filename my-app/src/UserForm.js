@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function UserForm({setUser, onAddUser}) {
+function UserForm({ onAddUser }) {
     const [formState, setFormState] = useState({
         name: "",
       });

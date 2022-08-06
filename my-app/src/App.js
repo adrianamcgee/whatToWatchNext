@@ -9,17 +9,25 @@ import React from "react";
 import Home from "./Home";
 import FilmDetails from "./FilmDetails";
 import EditBttn from "./EditBttn";
+import UserForm from "./UserForm";
 
 
 function App() {
   const [shows, setShows] = useState([])
   const [searchText, setSearchText] = useState("");
+  const [user, setUser] = useState([]);
 
 
   useEffect(() => {
     fetch ("http://localhost:9292/Shows")
     .then (res => res.json())
     .then (showData => setShows(showData))
+  }, [])
+
+  useEffect(() => {
+    fetch ("http://localhost:9292/Users")
+    .then (res => res.json())
+    .then (userData => setUser(userData))
   }, [])
 
   function handleChange(newText){
@@ -30,9 +38,9 @@ function App() {
     return setShows([...shows, newMovie]);
   };
 
-  //function onAddUser(newUser){
-  //  return setUsers([...user, newUser]);
- // };
+  function onAddUser(newUser){
+   return setUser([...user, newUser]);
+ };
 
   //function for editing movie
   const handleEditShow = (editedShow) => {
@@ -74,10 +82,13 @@ function App() {
             <MovieForm setShows={setShows} onAddMovie={onAddMovie}/>
           </Route>
           <Route exact path="/shows/:id">
-            <FilmDetails />
+            <FilmDetails onClick={handleDeleteShows}/>
           </Route>
-          <Route exact path="/show/:id/edit">
+          <Route exact path="/shows/:id/edit">
           <EditBttn handleEditShow={handleEditShow} />
+        </Route>
+        <Route exact path="/users">
+          <UserForm setUser={setUser} onAddUser={onAddUser} />
         </Route>
       </Switch>
       </Route>
