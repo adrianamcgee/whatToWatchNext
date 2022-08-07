@@ -14,12 +14,19 @@ import EditBttn from "./EditBttn";
 function App() {
   const [shows, setShows] = useState([])
   const [searchText, setSearchText] = useState("");
+  const [users,setUsers] = useState([])
 
 
   useEffect(() => {
     fetch ("http://localhost:9292/Shows")
     .then (res => res.json())
     .then (showData => setShows(showData))
+  }, [])
+
+  useEffect(() => {
+    fetch ("http://localhost:9292/Users")
+    .then (res => res.json())
+    .then (showData => setUsers(showData))
   }, [])
 
   function handleChange(newText){
@@ -30,9 +37,9 @@ function App() {
     return setShows([...shows, newMovie]);
   };
 
-  //function onAddUser(newUser){
-  //  return setUsers([...user, newUser]);
- // };
+  function onAddUser(newUser){
+    return setUsers([...users, newUser]);
+  };
 
   //function for editing movie
   const handleEditShow = (editedShow) => {
