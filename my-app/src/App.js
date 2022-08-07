@@ -18,13 +18,13 @@ function App() {
 
 
   useEffect(() => {
-    fetch ("http://localhost:9292/Shows")
+    fetch ("http://localhost:9292/shows")
     .then (res => res.json())
     .then (showData => setShows(showData))
   }, [])
 
   useEffect(() => {
-    fetch ("http://localhost:9292/Users")
+    fetch ("http://localhost:9292/users")
     .then (res => res.json())
     .then (showData => setUsers(showData))
   }, [])
@@ -81,7 +81,7 @@ function App() {
             <MovieForm setShows={setShows} onAddMovie={onAddMovie}/>
           </Route>
           <Route exact path="/shows/:id">
-            <FilmDetails />
+            <FilmDetails onClick={handleDeleteShows}/>
           </Route>
           <Route exact path="/show/:id/edit">
           <EditBttn handleEditShow={handleEditShow} />

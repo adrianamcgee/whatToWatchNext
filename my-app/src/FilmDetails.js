@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import EditBttn from "./EditBttn";
 import { NavLink } from "react-router-dom"
 
-function FilmDetails() {
+function FilmDetails({handleDeleteShows}) {
 
     
     const [show, setShow] = useState(null);
@@ -12,7 +12,7 @@ function FilmDetails() {
     const { id } = useParams();
 
     useEffect(() => {
-      fetch(`http://localhost:9292/Shows/${id}`)
+      fetch(`http://localhost:9292/shows/${id}`)
         .then((r) => r.json())
         .then((show) => {
           setShow(show);
@@ -39,9 +39,7 @@ function FilmDetails() {
             <div className='desc'>
               <h4>{title}</h4>
               <button onClick={handleDeleteShows}>DELETE</button>
-            <NavLink to={`/Shows/${id}/edit`}
             <button onClick={EditBttn}> EDIT </button>
-            </NavLink>
             </div>
               <p>{genre}</p>
               <p>

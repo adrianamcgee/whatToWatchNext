@@ -19,7 +19,7 @@ const EditBttn = ({ handleEditShow }) => {
     const { id } = useParams()
     console.log(id)
     useEffect(() => {
-    fetch(`http://localhost:9292/Shows/${id}`)
+    fetch(`http://localhost:9292/shows/${id}`)
         .then((res) => res.json())
         .then((show) => setFormData(show));
     }, []);
@@ -38,7 +38,7 @@ const EditBttn = ({ handleEditShow }) => {
             body: JSON.stringify(formData)
         }
 
-        fetch(`http://localhost:9292/Shows/${id}`, configObj)
+        fetch(`http://localhost:9292/shows/${id}`, configObj)
             .then((r) => r.json())
             .then((editedShow) => {
                 handleEditShow(editedShow);

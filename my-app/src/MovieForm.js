@@ -21,7 +21,7 @@ function MovieForm({setShows, onAddMovie}) {
     }
     function handleSubmit(e){
         e.preventDefault();
-        fetch ("http://localhost:9292/Shows", {
+        fetch ("http://localhost:9292/shows", {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
