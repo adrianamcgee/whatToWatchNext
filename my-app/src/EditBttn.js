@@ -1,10 +1,10 @@
-import react from "react";
+import React from "react";
 import { Link, useHistory, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 
-const EditBttn = ({ handleEditShow }) => {
-    const[formData, setFormData] = useState({
+function EditBttn ({ handleEditShow }){
+    const [formData, setFormData] = useState({
         title: "",
         poster: "",
         runtime: "",
@@ -12,39 +12,40 @@ const EditBttn = ({ handleEditShow }) => {
         releaseYear: "",
         genre: "",
         summary: "",
-    });
+    })
 
     const { title, poster, runtime, trailer, releaseYear, genre, summary } = formData;
 
-    const { id } = useParams()
-    console.log(id)
-    useEffect(() => {
-    fetch(`http://localhost:9292/Shows/${id}`)
-        .then((res) => res.json())
-        .then((show) => setFormData(show));
-    }, []);
+    // const { id } = useParams()
+    // console.log(id)
+
+    // useEffect(() => {
+    // fetch(`http://localhost:9292/shows/${id}`)
+    //     .then((res) => res.json())
+    //     .then((show) => setFormData(show));
+    // }, []);
 
     const history = useHistory()
     console.log(history)
 
-    function handleSubmit(e) {
-        e.preventDefault();
-        const configObj = {
-            method: "PATCH",
-            headers: {
-                "Content-Type" : "application/json",
-                Accept: "application/json",
-            },
-            body: JSON.stringify(formData)
-        }
+    // function handleSubmit(e) {
+    //     e.preventDefault();
+    //     const configObj = {
+    //         method: "PATCH",
+    //         headers: {
+    //             "Content-Type" : "application/json",
+    //             Accept: "application/json",
+    //         },
+    //         body: JSON.stringify(formData)
+    //     }
 
-        fetch(`http://localhost:9292/Shows/${id}`, configObj)
-            .then((r) => r.json())
-            .then((editedShow) => {
-                handleEditShow(editedShow);
-                history.push(`/Shows/${id}`)
-             });
-    };
+        // fetch(`http://localhost:9292/shows/${id}`, configObj)
+        //     .then((r) => r.json())
+        //     .then((editedShow) => {
+        //         handleEditShow(editedShow);
+        //         history.push(`/Shows/${id}`)
+        //      });
+    // };
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -53,7 +54,8 @@ const EditBttn = ({ handleEditShow }) => {
 
     
     return (
-        <form onSubmit={handleSubmit} className="form" autoComplete="on">
+        <div> blahahahahhahaha
+        <form  className="form" autoComplete="on">
             
             <h3>Edit</h3>
 
@@ -119,6 +121,7 @@ const EditBttn = ({ handleEditShow }) => {
             </ul>
             <input type="submit" value="edit" placeholder="Edit Entry" />
         </form>
+        </div>
     )
 }
 

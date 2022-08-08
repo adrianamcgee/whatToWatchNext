@@ -15,19 +15,19 @@ import UserForm from "./UserForm";
 function App() {
   const [shows, setShows] = useState([])
   const [searchText, setSearchText] = useState("");
-  const [user, setUser] = useState([]);
+  const [users,setUsers] = useState([])
 
 
   useEffect(() => {
-    fetch ("http://localhost:9292/Shows")
+    fetch ("http://localhost:9292/shows")
     .then (res => res.json())
     .then (showData => setShows(showData))
   }, [])
 
   useEffect(() => {
-    fetch ("http://localhost:9292/Users")
+    fetch ("http://localhost:9292/users")
     .then (res => res.json())
-    .then (userData => setUser(userData))
+    .then (showData => setUsers(showData))
   }, [])
 
   function handleChange(newText){
@@ -39,11 +39,12 @@ function App() {
   };
 
   function onAddUser(newUser){
-   return setUser([...user, newUser]);
- };
+    return setUsers([...users, newUser]);
+  };
 
   //function for editing movie
   const handleEditShow = (editedShow) => {
+    console.log('hi')
     const updatedShowsArray = shows.map((oldShow) => {
       if (oldShow.id === editedShow.id){
         return editedShow;
@@ -56,12 +57,12 @@ function App() {
 
   //delete function for DELETE BUTTON
   function handleDeleteShows(deletedID) {
-    // console.log(deletedID)
+    console.log(deletedID)
     const updatedShows = shows.filter(
-      (show) => shows.id !== deletedID
-      
-    );
+      (show) => show.id !== deletedID
+    ); console.log(updatedShows)
     setShows(updatedShows)
+    // history.push
   }
 
 
@@ -82,13 +83,13 @@ function App() {
             <MovieForm setShows={setShows} onAddMovie={onAddMovie}/>
           </Route>
           <Route exact path="/shows/:id">
-            <FilmDetails onClick={handleDeleteShows}/>
+            <FilmDetails handleDeleteShows={handleDeleteShows}/>
           </Route>
           <Route exact path="/shows/:id/edit">
           <EditBttn handleEditShow={handleEditShow} />
         </Route>
         <Route exact path="/users">
-          <UserForm setUser={setUser} onAddUser={onAddUser} />
+          <UserForm setUsers={setUsers} onAddUser={onAddUser} />
         </Route>
       </Switch>
       </Route>

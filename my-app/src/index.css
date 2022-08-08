@@ -42,8 +42,8 @@ html{
   animation-play-state: paused;
 }
 .swiper-slide img {
-  width: 350px;
-  height: 400px;
+  width: 35px;
+  height: 40px;
 }
 .cards1  {
   display: flex;
@@ -52,7 +52,7 @@ html{
   overflow: scroll;
   text-align: center; 
   position: fixed;
-  top: 50%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
  

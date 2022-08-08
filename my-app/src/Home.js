@@ -1,4 +1,4 @@
-
+import EditBttn from './EditBttn';
 import { NavLink } from 'react-router-dom'
 
 function Home() {
@@ -39,6 +39,7 @@ function Home() {
                         <h5>Login</h5>
                     </div>
                 </NavLink>
+                
             </section>
         </div>
     );

@@ -15,7 +15,9 @@ function Header() {
             <NavLink exact className="button" to="/shows/new">
               Add a Movie
             </NavLink>
-            <NavLink exact className="button" to="/shows/user">Login</NavLink>
+            <NavLink exact className="button" to="/users">
+              Login
+            </NavLink>
           </div>
         </nav>
       </header>
