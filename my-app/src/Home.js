@@ -34,7 +34,7 @@ function Home() {
                     </div>
                 </NavLink>                
             
-                <NavLink exact className="button" to="/weeksmovie" style= { { textDecoration: 'none' }}>
+                <NavLink exact className="button" to="/users" style= { { textDecoration: 'none' }}>
                         <div className='card-card4'>
                         <h5>Login</h5>
                     </div>

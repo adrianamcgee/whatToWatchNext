@@ -24,11 +24,11 @@ function App() {
     .then (showData => setShows(showData))
   }, [])
 
-  useEffect(() => {
-    fetch ("http://localhost:9292/users")
-    .then (res => res.json())
-    .then (showData => setUsers(showData))
-  }, [])
+ // useEffect(() => {
+  //  fetch ("http://localhost:9292/users")
+  //  .then (res => res.json())
+  //  .then (showData => setUsers(showData))
+ // }, [])
 
   function handleChange(newText){
     setSearchText(newText);
@@ -89,7 +89,7 @@ function App() {
           <EditBttn handleEditShow={handleEditShow} />
         </Route>
         <Route exact path="/users">
-          <UserForm setUsers={setUsers} onAddUser={onAddUser} />
+          <UserForm setUsers={setUsers} onAddUser={onAddUser} users={users}/>
         </Route>
       </Switch>
       </Route>

@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-function UserForm({ onAddUser }) {
+function UserForm({ onAddUser, setUsers, users }) { 
+
+
     const [formState, setFormState] = useState({
         name: "",
       });
@@ -8,14 +10,16 @@ function UserForm({ onAddUser }) {
     function handleChange(event){
         setFormState((prevFormState) => { 
             return {
-                ...prevFormState,
                 [event.target.name]: event.target.value,
             };
         });
     }
+
+
     function handleSubmit(e){
         e.preventDefault();
-        fetch ("http://localhost:9292/Shows", {
+        console.log(formState)
+        fetch ("http://localhost:9292/users", {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
@@ -38,7 +42,8 @@ function UserForm({ onAddUser }) {
                     <h2 className="h2Form">User Login </h2>
 
                     <div className="formitem">                
-                        <input onChange={handleChange} type="text" id="yourname" placeholder="User Name" style={{height:25, width:250}} name="user" value={formState.name}/>
+                        <input onChange={handleChange} type="text" id="yourname" placeholder="User Name" style={{height:25, width:250}} name="name" value={formState.name}/>
+
                     </div>
 
                     <div className="formitem">

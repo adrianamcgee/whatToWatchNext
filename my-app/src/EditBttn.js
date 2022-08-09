@@ -16,6 +16,8 @@ function EditBttn ({ handleEditShow }){
 
     const { title, poster, runtime, trailer, releaseYear, genre, summary } = formData;
 
+    
+
     // const { id } = useParams()
     // console.log(id)
 

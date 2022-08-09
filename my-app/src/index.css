@@ -42,8 +42,8 @@ html{
   animation-play-state: paused;
 }
 .swiper-slide img {
-  width: 35px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 .cards1  {
   display: flex;
@@ -52,7 +52,7 @@ html{
   overflow: scroll;
   text-align: center; 
   position: fixed;
-  top: 90%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
  
@@ -116,14 +116,9 @@ html{
 
 }
 
-.filmPoster:hover {
-  transform: scale(1.25);
 
-}
 
-.swiper-img:hover {
-  transform: scale(1.5);
-}
+
 
 h1 {
   font-family: 'Bebas Neue', cursive;
@@ -152,8 +147,8 @@ h5:hover {
 }
 
 .swiper-img{
-  width: 400px;
-  height: 450px;
+  width: 200px;
+  height: 250px;
   align-items: center;
   display: flex;
   text-align: center;
@@ -181,8 +176,7 @@ h2 {
 }
 
 .swiper {
-  position: fixed;
-  top: 60%;
+  top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -191,10 +185,10 @@ h2 {
 .card {
   display: flex;
   position: fixed;
-  top: 55%;
-  left: 50%;
+  top: 70%;
+  left: 40%;
   transform: translate(-50%, -50%); 
-  width: 71%;
+  width: 30%;
 }
 
 .logo {
@@ -205,3 +199,26 @@ h2 {
   top: 6%;
   left: 6%;
 }
+
+img.filmPoster {
+  display: block;
+height: 400px;
+  width: 350px;
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+  margin: auto;
+}
+
+.filmPoster {
+  display: flex;
+  justify-content: center;
+  height: 800px;
+}
+
+form.adduser {
+  text-align: center;
+  height: 60px;
+}
+
